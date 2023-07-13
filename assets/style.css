@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Times New Roman', Times, serif;
 }
 
 body {
@@ -8,11 +8,14 @@ body {
 }
 
 .header {
-    position:sticky;
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: rgb(99, 60, 60);
     color: azure;
-    text-decoration-line:unset;
-    text-align:center;
+    text-decoration-line: unset;
+    text-align: center;
     padding: 25px;
 }
 
@@ -23,7 +26,7 @@ body {
     right: 10px;
     padding: 10px;
     border: 5px solid azure;
-    color:azure;
+    color: azure;
 
 }
 
@@ -37,10 +40,20 @@ div ul li {
 }
 
 .shaun.jpeg {
-    display:contents;
-    float:inline-end;
-    max-width: 20%;
-    max-height: 20%;
+    display: flex;
+    bottom: 10px;
+    left: 200px;
+    content: normal;
+    padding: 10px;
+    border: 5px solid teal;
+}
+
+.horiseon.jpg {
+    display: flex;
+    object-position: absolute;
+    right: 10px;
+    padding: 10px;
+    content: url(https://billyg04t.github.io/mod-challenge-1/);
 }
 
 p {
@@ -72,13 +85,6 @@ padding: 50px;
     margin: 5px;
 }
 
-.set-right {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    padding: 10px;
-    border: 5px solid teal;
-}
 .work1 {
     display:flex;
     margin: 50px;
@@ -88,6 +94,7 @@ padding: 50px;
     border: 5px solid black;
     padding: 15px;
     margin: 10px;
+    text-align: center;
 }
 
 .work1 p {
@@ -100,15 +107,13 @@ padding: 50px;
 }
 
 .contact-me1 {
-    display: flex;
-    position: absolute;
-    bottom: 0px;
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    bottom: 10px;
     right: 10px;
     padding: 10px;
     border: 5px solid black;
-}
-
-.contact-me1 li {
-    list-style-type: circle;
+    margin: 20px;
 }
 
