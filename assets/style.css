@@ -1,119 +1,61 @@
+/* Reset some default styles */
 * {
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
+    font-family: 'Lucida Sans', 'Times New Roman', Times, serif;
     background-color: rgba(156, 65, 23, 0.253);
 }
-/* Header specifications */
+
+/* Header styles */
 .header {
-    position: sticky;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     background-color: rgb(99, 60, 60);
     color: azure;
-    text-decoration-line: unset;
     text-align: center;
     padding: 25px;
 }
 
-.links {
-    display: inline-block;
-    position: absolute;
-    bottom: 0px;
-    right: 10px;
-    padding: 10px;
-    border: 5px solid azure;
-    color: azure;
-
+.links ul {
+    list-style: none;
 }
 
-.header p {
-    text-align: center;
-}
-div ul li {
-    display:inline-flex;
-    position: relative;
-    right: 0px;
+.links ul li {
+    display: inline;
+    margin: 0 10px;
 }
 
-.shaun.jpeg {
-    display: flex;
-    bottom: 10px;
-    left: 200px;
-    content: normal;
-    padding: 10px;
+.shaun {
+    width: 100px; /* Adjust the width as needed */
     border: 5px solid teal;
 }
 
-.horiseon.jpg {
-    display: flex;
-    object-position: absolute;
-    right: 10px;
-    padding: 10px;
-    content: url(https://billyg04t.github.io/mod-challenge-1/);
-}
-
-p {
-    font-size: 20px;
-    color: block;
-    text-align: justify;
-}
-
-ul {
-    display: inline-block;
-    text-align: right;
-    list-style: none;
-}
+/* About Me styles */
 .about-me1 {
-display: flex;
-padding: 50px;
-}
-
-.about-me1 h2 {
-    border: 5px solid black;
-    padding: 15px;
-    margin: 10px;
-}
-/* Text for my personal information */
-.about-me1 p {
-    position: relative;
-    padding: 5px;
-    border: 5px;
-    margin: 5px;
-}
-
-.work1 {
-    display:flex;
-    margin: 50px;
-}
-
-.work1 h2 {
-    border: 5px solid black;
-    padding: 15px;
-    margin: 10px;
+    padding: 20px;
     text-align: center;
 }
-/* Text for my previous works */
-.work1 p {
-    position: relative;
-    top: 15px;
-    left: 10px;
-    padding: 5px;
-    border: 5px;
-    margin: 5px;
-}
-/* For contact information */
-.contact-me1 {
-    display: inline-block;
-    position: relative;
-    top: 50px;
-    bottom: 10px;
-    right: 10px;
-    padding: 10px;
-    border: 5px solid black;
+
+/* Work section styles */
+.work1 {
+    text-align: center;
     margin: 20px;
 }
 
+.work-item {
+    margin: 20px;
+}
+
+/* Contact Me styles */
+.contact-me1 {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-me1 h2 {
+    border: 5px solid black;
+    padding: 10px;
+    margin: 10px;
+}
